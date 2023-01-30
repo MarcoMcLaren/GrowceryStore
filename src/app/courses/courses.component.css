@@ -1,0 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+button.btn-primary{
+    color: white;
+}
