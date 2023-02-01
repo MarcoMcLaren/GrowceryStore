@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
 import { PanelComponent } from './panel/panel.component';
 import { BudgetComponent } from './budget/budget.component';
+import { SimpleInputComponent } from './simple-input/simple-input.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
         CoursesComponent,
         PanelComponent,
         BudgetComponent,
+        SimpleInputComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -25,3 +26,14 @@ import { FormsModule } from '@angular/forms';
     ]
 })
 export class AppModule { }
+// declarations: [
+//     AppComponent,
+//     SimpleInputComponent,
+//   ],
+//   imports: [
+//     BrowserModule,
+//     AppRoutingModule,
+//     FormsModule
+//   ],
+//   providers: [],
+//   bootstrap: [AppComponent]

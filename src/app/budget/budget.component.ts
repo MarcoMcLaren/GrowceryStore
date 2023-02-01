@@ -55,6 +55,15 @@ export class BudgetComponent {
 }
 
 calculateBalance(){
-  this.balance = this.incomeAmount + this.expenseAmount;
+  let totalIncome = 0;
+  let totalExpense = 0;
+  for (let income of this.incomes) {
+    totalIncome += income.amount;
+  }
+  for (let expense of this.expenses) {
+    totalExpense += expense.amount;
+  }
+  this.balance = totalIncome - totalExpense;
+  this.showBalance = true;
 }
 }
