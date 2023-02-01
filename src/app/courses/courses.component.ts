@@ -6,9 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./courses.component.css']
 })
 export class CoursesComponent {
-courses = ["course1", "course2", "course3"];
+  showList = false;
 
-onSave(){
-  console.log(this.courses);
+courses = [
+  {id: 1, name: 'course1'},
+  {id: 2, name: 'course2'},
+  {id:3, name: 'course3'}
+]
+
+loadCourses(){
+  this.showList = !this.showList;
 }
 }

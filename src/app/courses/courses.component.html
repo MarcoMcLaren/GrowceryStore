@@ -1,3 +1,6 @@
-<p *ngFor="let course of courses">{{course | uppercase}}</p> <!--that | uppercase is called a PIPE-->
-<button type="button" class="btn btn-primary" (click)="onSave()">Save</button>
-
+<button class="btn btn-primary" (click)="loadCourses()">Load loadCourses</button>
+<ul *ngIf="showList">
+    <li *ngFor="let course of courses">
+{{ course.id}} and <strong>{{ course.name }}</strong>
+    </li>
+</ul>
