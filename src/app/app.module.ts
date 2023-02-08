@@ -7,6 +7,7 @@ import { PanelComponent } from './panel/panel.component';
 import { BudgetComponent } from './budget/budget.component';
 import { SimpleInputComponent } from './simple-input/simple-input.component';
 import { FormsModule } from '@angular/forms';
+import { InputFormatDirective } from './Directives/input-format.directive';
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import { FormsModule } from '@angular/forms';
         PanelComponent,
         BudgetComponent,
         SimpleInputComponent,
+        InputFormatDirective,
     ],
     providers: [],
     bootstrap: [AppComponent],
